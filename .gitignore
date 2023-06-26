@@ -1,0 +1,12 @@
+venv
+dist
+cookie
+build
+*.xlsx
+*.spec
+*.exe
+*.yml
+*.log
+.idea
+__*
+*.rar
