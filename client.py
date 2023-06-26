@@ -65,7 +65,7 @@ class Client:
         try:
             self.driver.get(url)
             elem = self.driver.find_element(By.CLASS_NAME, 'table-footer.table-bordered')
-            sells = elem.find_element(By.CLASS_NAME, 'text-right').text.replace('шт .', '')
+            sells = elem.find_element(By.CLASS_NAME, 'text-right').text.replace(' шт.', '')
             if not sells.isdigit():
                 sells = ''
             else:
