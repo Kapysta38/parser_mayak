@@ -26,7 +26,6 @@ def parse_file(data):
             url = elem[1] + str(elem[2])
             left, sells = client.parse_url(url)
             result.loc[len(result.index)] = [left, sells]
-            break
 
         sheet.update(result)
         data_result.append(sheet)
